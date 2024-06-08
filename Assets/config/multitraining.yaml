@@ -1,0 +1,49 @@
+behaviors:
+  Agent Controller:
+    trainer_type: ppo # Using PPO algorithm for training
+    hyperparameters:
+      batch_size: 1024 # Number of experiences used for each update step
+      buffer_size: 10240 # Number of experiences collected before updating the model
+      learning_rate: 0.0003 # Initial learning rate for training
+      beta: 0.005 # Entropy regularization strength
+      epsilon: 0.2 # PPO clip parameter
+      lambd: 0.95 # GAE parameter
+      num_epoch: 3 # Number of passes over the training data per update
+      learning_rate_schedule: linear # Linearly decrease learning rate over time
+    network_settings:
+      normalize: false # Do not normalize input features
+      hidden_units: 256 # Number of hidden units in the neural network
+      num_layers: 1 # Number of hidden layers
+      vis_encode_type: simple # Simple encoder for visual input
+    reward_signals:
+      extrinsic:
+        gamma: 0.9 # Discount factor for future rewards
+        strength: 1.0 # Strength of the extrinsic reward signal
+    keep_checkpoints: 5 # Number of checkpoints to keep
+    max_steps: 10000000 # Maximum number of training steps
+    time_horizon: 64 # Steps over which experience is accumulated
+    summary_freq: 50000 # Frequency of writing training statistics to summary
+  Hunter Controller:
+    trainer_type: ppo # Using PPO algorithm for training
+    hyperparameters:
+      batch_size: 1024 # Number of experiences used for each update step
+      buffer_size: 10240 # Number of experiences collected before updating the model
+      learning_rate: 0.0003 # Initial learning rate for training
+      beta: 0.005 # Entropy regularization strength
+      epsilon: 0.2 # PPO clip parameter
+      lambd: 0.95 # GAE parameter
+      num_epoch: 3 # Number of passes over the training data per update
+      learning_rate_schedule: linear # Linearly decrease learning rate over time
+    network_settings:
+      normalize: false # Do not normalize input features
+      hidden_units: 256 # Number of hidden units in the neural network
+      num_layers: 1 # Number of hidden layers
+      vis_encode_type: simple # Simple encoder for visual input
+    reward_signals:
+      extrinsic:
+        gamma: 0.9 # Discount factor for future rewards
+        strength: 1.0 # Strength of the extrinsic reward signal
+    keep_checkpoints: 5 # Number of checkpoints to keep
+    max_steps: 10000000 # Maximum number of training steps
+    time_horizon: 64 # Steps over which experience is accumulated
+    summary_freq: 50000 # Frequency of writing training statistics to summary
