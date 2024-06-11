@@ -1,0 +1,123 @@
+{
+    "Agent Controller": {
+        "checkpoints": [
+            {
+                "steps": 1999970,
+                "file_path": "results\\CubeAgent\\Agent Controller\\Agent Controller-1999970.onnx",
+                "reward": -8.25,
+                "creation_time": 1718107503.9874787,
+                "auxillary_file_paths": [
+                    "results\\CubeAgent\\Agent Controller\\Agent Controller-1999970.pt"
+                ]
+            },
+            {
+                "steps": 2499905,
+                "file_path": "results\\CubeAgent\\Agent Controller\\Agent Controller-2499905.onnx",
+                "reward": -7.666666666666667,
+                "creation_time": 1718108709.3098817,
+                "auxillary_file_paths": [
+                    "results\\CubeAgent\\Agent Controller\\Agent Controller-2499905.pt"
+                ]
+            },
+            {
+                "steps": 2999988,
+                "file_path": "results\\CubeAgent\\Agent Controller\\Agent Controller-2999988.onnx",
+                "reward": null,
+                "creation_time": 1718109923.965514,
+                "auxillary_file_paths": [
+                    "results\\CubeAgent\\Agent Controller\\Agent Controller-2999988.pt"
+                ]
+            },
+            {
+                "steps": 3499896,
+                "file_path": "results\\CubeAgent\\Agent Controller\\Agent Controller-3499896.onnx",
+                "reward": -5.0,
+                "creation_time": 1718111198.563318,
+                "auxillary_file_paths": [
+                    "results\\CubeAgent\\Agent Controller\\Agent Controller-3499896.pt"
+                ]
+            },
+            {
+                "steps": 3959145,
+                "file_path": "results\\CubeAgent\\Agent Controller\\Agent Controller-3959145.onnx",
+                "reward": null,
+                "creation_time": 1718112515.5917933,
+                "auxillary_file_paths": [
+                    "results\\CubeAgent\\Agent Controller\\Agent Controller-3959145.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 3959145,
+            "file_path": "results\\CubeAgent\\Agent Controller.onnx",
+            "reward": null,
+            "creation_time": 1718112515.5917933,
+            "auxillary_file_paths": [
+                "results\\CubeAgent\\Agent Controller\\Agent Controller-3959145.pt"
+            ]
+        }
+    },
+    "Hunter Controller": {
+        "checkpoints": [
+            {
+                "steps": 1999970,
+                "file_path": "results\\CubeAgent\\Hunter Controller\\Hunter Controller-1999970.onnx",
+                "reward": -5.0,
+                "creation_time": 1718107504.0929506,
+                "auxillary_file_paths": [
+                    "results\\CubeAgent\\Hunter Controller\\Hunter Controller-1999970.pt"
+                ]
+            },
+            {
+                "steps": 2499905,
+                "file_path": "results\\CubeAgent\\Hunter Controller\\Hunter Controller-2499905.onnx",
+                "reward": -6.666666666666667,
+                "creation_time": 1718108709.4325082,
+                "auxillary_file_paths": [
+                    "results\\CubeAgent\\Hunter Controller\\Hunter Controller-2499905.pt"
+                ]
+            },
+            {
+                "steps": 2999988,
+                "file_path": "results\\CubeAgent\\Hunter Controller\\Hunter Controller-2999988.onnx",
+                "reward": null,
+                "creation_time": 1718109924.0839021,
+                "auxillary_file_paths": [
+                    "results\\CubeAgent\\Hunter Controller\\Hunter Controller-2999988.pt"
+                ]
+            },
+            {
+                "steps": 3499896,
+                "file_path": "results\\CubeAgent\\Hunter Controller\\Hunter Controller-3499896.onnx",
+                "reward": -12.5,
+                "creation_time": 1718111198.6955714,
+                "auxillary_file_paths": [
+                    "results\\CubeAgent\\Hunter Controller\\Hunter Controller-3499896.pt"
+                ]
+            },
+            {
+                "steps": 3959145,
+                "file_path": "results\\CubeAgent\\Hunter Controller\\Hunter Controller-3959145.onnx",
+                "reward": null,
+                "creation_time": 1718112515.73332,
+                "auxillary_file_paths": [
+                    "results\\CubeAgent\\Hunter Controller\\Hunter Controller-3959145.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 3959145,
+            "file_path": "results\\CubeAgent\\Hunter Controller.onnx",
+            "reward": null,
+            "creation_time": 1718112515.73332,
+            "auxillary_file_paths": [
+                "results\\CubeAgent\\Hunter Controller\\Hunter Controller-3959145.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}
