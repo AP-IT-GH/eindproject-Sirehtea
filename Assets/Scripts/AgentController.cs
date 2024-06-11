@@ -40,7 +40,7 @@ public class AgentController : Agent
     public override void OnEpisodeBegin()
     {
         //Agent
-        transform.localPosition = new Vector3(Random.Range(-4, 4f), 0.3f, Random.Range(-4f, 4f)); //will spawn it randomly on this position (the position is decided by the maze size)
+        transform.localPosition = new Vector3(Random.Range(-48, 48f), 0.3f, Random.Range(-48f, 48f)); //will spawn it randomly on this position (the position is decided by the maze size)
 
         //Target
         createTarget();
@@ -55,7 +55,7 @@ public class AgentController : Agent
         CheckRemainingTime(); //  every frame time will be checked
     }
 
-    private void createTarget() 
+    private void createTarget()
     {
         if (spawnedTargetList.Count != 0)
         {
@@ -73,7 +73,7 @@ public class AgentController : Agent
             // Make target child of the environment
             newTarget.transform.parent = environmentLocation;
             // Give random spawn location
-            Vector3 targetLocation = new Vector3(Random.Range(-4f, 4f), 0.3f, Random.Range(-4f, 4f));
+            Vector3 targetLocation = new Vector3(Random.Range(-48f, 48f), 0.3f, Random.Range(-48f, 48f));
 
             if (spawnedTargetList.Count != 0)
             {
@@ -84,7 +84,7 @@ public class AgentController : Agent
                         distanceGood = CheckOverlap(targetLocation, spawnedTargetList[k].transform.localPosition, 5f);
                         if (distanceGood == false)
                         {
-                            targetLocation = new Vector3(Random.Range(-4f, 4f), 0.3f, Random.Range(-4f, 4f));
+                            targetLocation = new Vector3(Random.Range(-48f, 48f), 0.3f, Random.Range(-48f, 48f));
                             k--;
                             alreadyDecremeneted = true;
                             Debug.Log("Too close to other Target");
@@ -94,7 +94,7 @@ public class AgentController : Agent
                         if (distanceGood == false)
                         {
                             Debug.Log("Too close to Agent");
-                            targetLocation = new Vector3(Random.Range(-4f, 4f), 0.3f, Random.Range(-4f, 4f));
+                            targetLocation = new Vector3(Random.Range(-48f, 48f), 0.3f, Random.Range(-48f, 48f));
                             if (alreadyDecremeneted == false)
                             {
                                 k--;
@@ -127,7 +127,7 @@ public class AgentController : Agent
         {
             return false;
         }
-    }   
+    }
 
     private void RemoveTarget(List<GameObject> toBeDeletedGameObjectList)
     {
@@ -200,7 +200,7 @@ public class AgentController : Agent
         timeLeft = Time.time + timeForEpisode;
     }
 
-    private void CheckRemainingTime() 
+    private void CheckRemainingTime()
     {
         if (Time.time >= timeLeft)
         {
