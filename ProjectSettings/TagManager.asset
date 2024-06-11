@@ -8,15 +8,17 @@ TagManager:
   - Wall
   - Agent
   - Hunter
+  - Ground
+  - Checkpoint
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Checkpoint
   - Water
   - UI
-  - 
-  - 
+  - Wall
+  - Target
   - 
   - 
   - 
