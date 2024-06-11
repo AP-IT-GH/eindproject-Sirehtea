@@ -40,7 +40,7 @@ public class AgentController : Agent
     public override void OnEpisodeBegin()
     {
         //Agent
-        transform.localPosition = new Vector3(Random.Range(-48, 48f), 0.3f, Random.Range(-48f, 48f)); //will spawn it randomly on this position (the position is decided by the maze size)
+        transform.localPosition = new Vector3(Random.Range(-4, 4f), 0.3f, Random.Range(-4f, 4f)); //will spawn it randomly on this position (the position is decided by the maze size)
 
         //Target
         createTarget();
