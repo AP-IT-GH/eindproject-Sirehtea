@@ -11,6 +11,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Map.unity
     guid: efd3a6ce7e50dfe44ab23c6749218b1b
+  - enabled: 1
+    path: Assets/Scenes/ExitDoorMaze.unity
+    guid: c370b6abfc92ea04f8fcb3c56413f9f5
+  - enabled: 1
+    path: Assets/Scenes/EndScene.unity
+    guid: d8a7152d3b9a03a478869fbb37c225fa
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 00471013eb64ee44ab0ad0bfa18e2842, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: ab027a41a1a2fa8478ad3154b6ca956a, type: 2}
