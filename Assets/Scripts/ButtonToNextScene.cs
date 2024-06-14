@@ -6,6 +6,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class ButtonToNextScene : MonoBehaviour
 {
+    public int SceneNumber;
     private void OnEnable()
     {
         // Subscribe to the select event
@@ -21,6 +22,6 @@ public class ButtonToNextScene : MonoBehaviour
     private void OnButtonPressed(SelectEnterEventArgs args)
     {
         // Load the next scene
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(SceneNumber);
     }
 }
