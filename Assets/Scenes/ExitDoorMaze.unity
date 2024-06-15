@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -551,7 +551,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ddec735f6a91cc4bb1b3ac8b287e71f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1001 &7022653007339544880
+--- !u!1001 &4524030083882780115
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -559,64 +559,64 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2035162768982200161, guid: 0649652a064a24d4ab5e0caef9ef3dd8, type: 3}
-      propertyPath: m_Name
-      value: XRrigPreyAndKeyCard
-      objectReference: {fileID: 0}
-    - target: {fileID: 4303919633679661756, guid: 0649652a064a24d4ab5e0caef9ef3dd8, type: 3}
+    - target: {fileID: 3659243850400929907, guid: cccdaa5f8a6415740acf0cb33551e9c0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4303919633679661756, guid: 0649652a064a24d4ab5e0caef9ef3dd8, type: 3}
+    - target: {fileID: 3659243850400929907, guid: cccdaa5f8a6415740acf0cb33551e9c0, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4303919633679661756, guid: 0649652a064a24d4ab5e0caef9ef3dd8, type: 3}
+    - target: {fileID: 3659243850400929907, guid: cccdaa5f8a6415740acf0cb33551e9c0, type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4303919633679661756, guid: 0649652a064a24d4ab5e0caef9ef3dd8, type: 3}
+    - target: {fileID: 3659243850400929907, guid: cccdaa5f8a6415740acf0cb33551e9c0, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4303919633679661756, guid: 0649652a064a24d4ab5e0caef9ef3dd8, type: 3}
+    - target: {fileID: 3659243850400929907, guid: cccdaa5f8a6415740acf0cb33551e9c0, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4303919633679661756, guid: 0649652a064a24d4ab5e0caef9ef3dd8, type: 3}
+    - target: {fileID: 3659243850400929907, guid: cccdaa5f8a6415740acf0cb33551e9c0, type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4303919633679661756, guid: 0649652a064a24d4ab5e0caef9ef3dd8, type: 3}
+    - target: {fileID: 3659243850400929907, guid: cccdaa5f8a6415740acf0cb33551e9c0, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4303919633679661756, guid: 0649652a064a24d4ab5e0caef9ef3dd8, type: 3}
+    - target: {fileID: 3659243850400929907, guid: cccdaa5f8a6415740acf0cb33551e9c0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4303919633679661756, guid: 0649652a064a24d4ab5e0caef9ef3dd8, type: 3}
+    - target: {fileID: 3659243850400929907, guid: cccdaa5f8a6415740acf0cb33551e9c0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4303919633679661756, guid: 0649652a064a24d4ab5e0caef9ef3dd8, type: 3}
+    - target: {fileID: 3659243850400929907, guid: cccdaa5f8a6415740acf0cb33551e9c0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7288104536639660351, guid: cccdaa5f8a6415740acf0cb33551e9c0, type: 3}
+      propertyPath: m_Name
+      value: XRrigPreyAndKeyCard
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1114271993982806903, guid: 0649652a064a24d4ab5e0caef9ef3dd8, type: 3}
+    - targetCorrespondingSourceObject: {fileID: 968258548948250456, guid: cccdaa5f8a6415740acf0cb33551e9c0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
-  m_SourcePrefab: {fileID: 100100000, guid: 0649652a064a24d4ab5e0caef9ef3dd8, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: cccdaa5f8a6415740acf0cb33551e9c0, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 150188940}
-  - {fileID: 7022653007339544880}
+  - {fileID: 4524030083882780115}
   - {fileID: 483270351}
   - {fileID: 1817958291}
   - {fileID: 473817894}
