@@ -1,0 +1,69 @@
+{
+    "Agent Controller": {
+        "checkpoints": [
+            {
+                "steps": 499986,
+                "file_path": "results\\HunterRun\\Agent Controller\\Agent Controller-499986.onnx",
+                "reward": -5.726086956521739,
+                "creation_time": 1717871933.2753544,
+                "auxillary_file_paths": [
+                    "results\\HunterRun\\Agent Controller\\Agent Controller-499986.pt"
+                ]
+            },
+            {
+                "steps": 934065,
+                "file_path": "results\\HunterRun\\Agent Controller\\Agent Controller-934065.onnx",
+                "reward": -5.7272727272727275,
+                "creation_time": 1717872770.489465,
+                "auxillary_file_paths": [
+                    "results\\HunterRun\\Agent Controller\\Agent Controller-934065.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 934065,
+            "file_path": "results\\HunterRun\\Agent Controller.onnx",
+            "reward": -5.7272727272727275,
+            "creation_time": 1717872770.489465,
+            "auxillary_file_paths": [
+                "results\\HunterRun\\Agent Controller\\Agent Controller-934065.pt"
+            ]
+        }
+    },
+    "Hunter Controller": {
+        "checkpoints": [
+            {
+                "steps": 499986,
+                "file_path": "results\\HunterRun\\Hunter Controller\\Hunter Controller-499986.onnx",
+                "reward": 9.565217391304348,
+                "creation_time": 1717871933.393091,
+                "auxillary_file_paths": [
+                    "results\\HunterRun\\Hunter Controller\\Hunter Controller-499986.pt"
+                ]
+            },
+            {
+                "steps": 934065,
+                "file_path": "results\\HunterRun\\Hunter Controller\\Hunter Controller-934065.onnx",
+                "reward": 10.0,
+                "creation_time": 1717872770.5729792,
+                "auxillary_file_paths": [
+                    "results\\HunterRun\\Hunter Controller\\Hunter Controller-934065.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 934065,
+            "file_path": "results\\HunterRun\\Hunter Controller.onnx",
+            "reward": 10.0,
+            "creation_time": 1717872770.5729792,
+            "auxillary_file_paths": [
+                "results\\HunterRun\\Hunter Controller\\Hunter Controller-934065.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}
