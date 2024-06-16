@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.094285704, g: 0.11944757, b: 0.1552327, a: 1}
+  m_IndirectSpecularColor: {r: 0.0942856, g: 0.11944754, b: 0.15523255, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -976,7 +976,11 @@ PrefabInstance:
       value: XRrigPreyAndKeyCard
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 6204641220992936554, guid: 5375f4bc29778ca42b4e2af2b16b2d64, type: 3}
+    - {fileID: 5830127857464177331, guid: 5375f4bc29778ca42b4e2af2b16b2d64, type: 3}
+    - {fileID: 2253584616768333005, guid: 5375f4bc29778ca42b4e2af2b16b2d64, type: 3}
+    - {fileID: 2110366738475088275, guid: 5375f4bc29778ca42b4e2af2b16b2d64, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 3813421595539824647, guid: 5375f4bc29778ca42b4e2af2b16b2d64, type: 3}
