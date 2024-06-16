@@ -50,3 +50,27 @@ De beloningen zijn ontworpen om het gedrag van de ML-agent te sturen naar het su
 
 - **Vinden van de speler**: Wanneer de agent de speler (met de tag "Agent") vangt, krijgt hij een positieve beloning.
 - **Botsen met muren**: Wanneer de agent tegen een muur botst (met de tag "Wall"), krijgt hij een negatieve beloning om dit gedrag te ontmoedigen.
+
+### Beschrijving van de Objecten
+
+- **Gevangene (speler)**: De hoofdpersoon die probeert te ontsnappen uit de gevangenis. De speler beweegt zich vrij door de gevangenis, zoekt voor een keycard en gebruikt deze om de uitgang te ontgrendelen terwijl hij de bewakers probeerd te ontwijken.
+- **Bewakers**: ML-agents die zijn getraind om de speler te detecteren en te achtervolgen. Ze patrouilleren door de gevangenis en proberen de speler te vangen.
+- **Keycard**: Een essentieel object dat nodig is om de uitgang te ontgrendelen.
+- **Uitgang**: De uitgang wordt ontgrendeld met een keycard en leidt naar de vrijheid.
+
+### Scènes
+
+Er zijn in totaal zes scènes in het spel:
+
+1. **BeginScene**: De VR-speler begint in een gevangeniscel. Deze scène bevat een gebruikersinterface om het spel te starten en het volume aan te passen.
+2. **Lobby**: De speler bevindt zich in een gevangenislobby waar hij met de XR rig interactie kan hebben door een van de drie knoppen te pakken. De groene knop brengt de speler naar de makkelijkste level, de oranje knop naar matige level en de rode knop naar de moeillijskte level.
+3. **Map1, Map2, Map3**: De verschillende maps bepalen het aantal bewakers in de map, wat de moeilijkheidsgraad van het level beïnvloedt. In deze gevangenisdoolhoven moet de speler een keycard vinden om de uitgang te ontgrendelen en door een gebroken ventilatieschacht te ontsnappen. Terwijl de speler de keycard zoekt, proberen de bewakers de speler te vinden en te vangen.
+4. **EndScene**: Dit is een statische scène waar de gevangene wordt getoond terwijl hij ontsnapt en de eindcredits worden afgespeeld.
+
+### Assets
+
+- **LowPolyJail**: Bevat de modellen voor de gevangene, bewakers, muren, kamers, props.
+- **AllSkyFree**: Bevat de skyboxes voor de scènes.
+- **ADG_Textures**: Bevat de grondtexturen.
+- **TextureHaven**: Bevat de vloertexturen.
+- **WhiteCity**: Bevat de stad die als achtergrond wordt gebruikt.
