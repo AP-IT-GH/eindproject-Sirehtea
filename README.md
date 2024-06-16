@@ -74,3 +74,33 @@ Er zijn in totaal zes scènes in het spel:
 - **ADG_Textures**: Bevat de grondtexturen.
 - **TextureHaven**: Bevat de vloertexturen.
 - **WhiteCity**: Bevat de stad die als achtergrond wordt gebruikt.
+
+### One-pager Informatie
+
+Onze game is gebaseerd op het "PRISON BREAK" concept waarbij de speler in VR moet ontsnappen uit een doolhofachtige gevangenis terwijl hij wordt achtervolgd door AI-gestuurde bewakers. In dit spel neemt de speler de rol aan van een gevangene die door verschillende levels moet navigeren om een keycard te vinden en de uitgang te bereiken. De bewakers, die met machine learning zijn getraind, patrouilleren door de gevangenis en proberen de speler te vangen. Elk level varieert in moeilijkheidsgraad, afhankelijk van het aantal bewakers.
+
+### Afwijkingen van de One-pager
+
+Onze eerste one-pager beschreef een iets ander concept voor het spel. Hieronder beschrijven we de oorspronkelijke plannen en de aanpassingen die we hebben doorgevoerd, evenals de redenen voor deze veranderingen.
+
+#### Oorspronkelijke Plannen
+
+De oorspronkelijke one-pager bevatte de volgende elementen:
+
+- **Interacties**:
+  - **Scene 1**: De speler moest drie keycards verzamelen, verspreid over drie kamers met een bewaker in elke kamer. Na het verzamelen van de keycards ontgrendelde de speler een taser en ging naar het gevangenisplein.
+  - **Scene 2**: Op het gevangenisplein moest de speler een geavanceerde Robocop vier keer raken met een taser, waarbij de Robocop steeds slimmer werd met elke hit.
+
+#### Redenen voor de Aanpassingen
+
+1. **Complexiteit Verminderen**: De oorspronkelijke scènes met de Robocop en meerdere keycards waren complex en vereisten veel resources. Door de levels te vereenvoudigen en de focus te leggen op het vinden van één keycard, konden we de ontwikkeltijd verkorten en de gameplay verbeteren.
+2. **Gameplay Verbeteren**: Door de levels te variëren in moeilijkheidsgraad op basis van het aantal bewakers, hebben we de spelervaring uitdagender en gevarieerder gemaakt. Dit zorgt voor een betere leercurve voor de spelers.
+3. **Gebruik van VR**: Door de speler in een VR-omgeving te plaatsen, hebben we de immersie en spanning verhoogd. De speler kan vrij rondkijken en interageren met de omgeving, wat een meeslepende ervaring biedt.
+
+### Samenvatting van de Aanpassingen
+
+- **Oorspronkelijke Plan**: Drie keycards verzamelen, taser gebruiken op een Robocop.
+- **Huidige Implementatie**: Een keycard in de maze, variërende moeilijkheidsgraad, focus op ontsnappen uit de gevangenis.
+- **Redenen**: Vereenvoudiging van de ontwikkeling, verbetering van de gameplay.
+
+Deze aanpassingen hebben geleid tot een meer gestroomlijnde en boeiende spelervaring, waarbij de kracht van AI en VR optimaal wordt benut om een dynamisch en meeslepend spel te creëren.
