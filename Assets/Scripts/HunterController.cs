@@ -9,6 +9,7 @@ public class HunterController : Agent
 {
     // Hunter variables
     [SerializeField] private float moveSpeed = 6f;
+    [SerializeField] private float rotationSpeed = 100f;
     private Rigidbody rb;
 
     // Environment variables
@@ -22,6 +23,9 @@ public class HunterController : Agent
     private Vector3 lastKnownPosition;
     private bool knowsPreyPosition = false;
 
+    // Boundaries of the environment
+    private float envBoundary = 48f;
+
     public override void Initialize()
     {
         rb = GetComponent<Rigidbody>();
@@ -31,13 +35,13 @@ public class HunterController : Agent
     public override void OnEpisodeBegin()
     {
         // Hunter
-        Vector3 spawnLocation = new Vector3(Random.Range(-48f, 48f), 0.3f, Random.Range(-48f, 48f)); // will spawn it randomly on this position (the position is decided by the maze size)
+        Vector3 spawnLocation = new Vector3(Random.Range(-envBoundary, envBoundary), 0.3f, Random.Range(-envBoundary, envBoundary)); // will spawn it randomly on this position (the position is decided by the maze size)
 
         bool distanceGood = classObject.CheckOverlap(prey.transform.localPosition, spawnLocation, 5f);
 
         while (!distanceGood)
         {
-            spawnLocation = new Vector3(Random.Range(-48f, 48f), 0.3f, Random.Range(-48f, 48f)); // will spawn it randomly on this position (the position is decided by the maze size)
+            spawnLocation = new Vector3(Random.Range(-envBoundary, envBoundary), 0.3f, Random.Range(-envBoundary, envBoundary)); // will spawn it randomly on this position (the position is decided by the maze size)
             distanceGood = classObject.CheckOverlap(prey.transform.localPosition, spawnLocation, 5f);
         }
 
@@ -62,11 +66,22 @@ public class HunterController : Agent
 
     public override void OnActionReceived(ActionBuffers actions)
     {
-        float moveRotate = actions.ContinuousActions[0];
-        float moveForward = actions.ContinuousActions[1];
+        float moveRotate = Mathf.Clamp(actions.ContinuousActions[0], -1f, 1f);
+        float moveForward = Mathf.Clamp(actions.ContinuousActions[1], 0f, 1f);
+
+        if (knowsPreyPosition)
+        {
+            Vector3 directionToPrey = lastKnownPosition - transform.localPosition;
+            directionToPrey.y = 0; // Ignore y-axis
+            Quaternion lookRotation = Quaternion.LookRotation(directionToPrey);
+            transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, rotationSpeed * Time.deltaTime);
+        }
+        else
+        {
+            transform.Rotate(0f, moveRotate * rotationSpeed * Time.deltaTime, 0f, Space.Self); // rotate only on Y-axis
+        }
 
         rb.MovePosition(transform.position + transform.forward * moveForward * moveSpeed * Time.deltaTime);
-        transform.Rotate(0f, moveRotate * moveSpeed, 0f, Space.Self); // rotate only on Y-axis
 
         // Update last known position if the prey is in sight
         if (CanSeePrey())
@@ -76,18 +91,16 @@ public class HunterController : Agent
             AddReward(0.1f); // Reward for seeing the prey
         }
 
-        // Guide hunter towards the last known position of the prey
-        if (knowsPreyPosition)
+        // Penalize for staying near walls or corners
+        if (IsNearWallOrCorner())
         {
-            Vector3 directionToPrey = lastKnownPosition - transform.localPosition;
-            directionToPrey.y = 0; // Ignore y-axis
-            directionToPrey.Normalize();
+            AddReward(-0.05f);
+        }
 
-            rb.MovePosition(transform.position + directionToPrey * moveForward * moveSpeed * Time.deltaTime);
-
-            // Reward for moving closer to the last known position
-            float distanceToLastKnownPosition = Vector3.Distance(transform.localPosition, lastKnownPosition);
-            AddReward(-distanceToLastKnownPosition * 0.01f); // Penalize for being far from the last known position
+        // Penalize for excessive rotation
+        if (!knowsPreyPosition && Mathf.Abs(moveRotate) > 0.5f)
+        {
+            AddReward(-0.01f);
         }
 
         // Penalize for not moving
@@ -135,5 +148,12 @@ public class HunterController : Agent
             }
         }
         return false;
+    }
+
+    private bool IsNearWallOrCorner()
+    {
+        // Check if the hunter is near the walls or corners
+        return transform.localPosition.x < -envBoundary + 5f || transform.localPosition.x > envBoundary - 5f ||
+               transform.localPosition.z < -envBoundary + 5f || transform.localPosition.z > envBoundary - 5f;
     }
 }
