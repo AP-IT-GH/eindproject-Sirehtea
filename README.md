@@ -15,15 +15,17 @@ In deze tutorial zullen we je door het proces leiden van het verkrijgen en repro
 
 ### Installatie
 
-Unity versie: 2022.3.20f1
-Anaconda versie: 2024.02
-ML Agents: 2.0.1
-Oculus XR Plugin: 4.1.2
-OpenXR Plugin: 1.10.0
-XR Core Utilities: 2.3.0
-XR Interaction Toolkit: 2.5.4
-XR Legacy Input Helpers: 2.1.10
-XR Plugin Management: 4.4.1
+- Unity versie: 2022.3.20f1
+- Anaconda versie: 2024.02
+- ML Agents: 2.0.1
+- Oculus XR Plugin: 4.1.2
+- OpenXR Plugin: 1.10.0
+- XR Core Utilities: 2.3.0
+- XR Interaction Toolkit: 2.5.4
+- XR Legacy Input Helpers: 2.1.10
+- XR Plugin Management: 4.4.1
+
+Om het unity project te ontvangen moet je "git clone https://github.com/AP-IT-GH/eindproject-Sirehtea.git"
 
 ### Verloop van het Spel
 
