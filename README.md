@@ -113,6 +113,9 @@ Hier presenteren we de resultaten van de training van de ML-agents met behulp va
 
 ### Beschrijving van de TensorBoard Grafieken
 
+![image](https://github.com/AP-IT-GH/eindproject-Sirehtea/assets/145667096/b9dee6e5-fd2e-41f2-87da-68d5ea489f1c)
+
+
 - **Trainingsevolutie**: Deze grafiek toont de vooruitgang van de bewakers (Hunter Controller) bij het leren om de speler te detecteren en te achtervolgen, en de agent (Agent Controller) bij het vinden van drie objecten in het doolhof.
 - **Beloningsgrafiek**: Deze grafiek toont de gemiddelde beloning die de ML-agents ontvangen tijdens de training. De y-as vertegenwoordigt de cumulatieve beloning, terwijl de x-as de tijd (in stappen) weergeeft.
 
