@@ -909,8 +909,6 @@ GameObject:
   - component: {fileID: 6327331035965295828}
   - component: {fileID: 3355864759009457250}
   - component: {fileID: 8463295408461216387}
-  - component: {fileID: 6899611596904941071}
-  - component: {fileID: 8783821841767946416}
   m_Layer: 0
   m_Name: Guard
   m_TagString: Hunter
@@ -1036,41 +1034,6 @@ MonoBehaviour:
   m_UseChildSensors: 1
   m_UseChildActuators: 1
   m_ObservableAttributeHandling: 0
---- !u!114 &6899611596904941071
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4320654612393653625}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6be86d63c5e5f7b4482c94be25cd3a03, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  agentParameters:
-    maxStep: 0
-  hasUpgradedFromAgentParameters: 1
-  MaxStep: 0
-  moveSpeed: 6
-  prey: {fileID: 0}
-  walls: []
-  interiorWallsParent: {fileID: 0}
-  exteriorWallsParent: {fileID: 0}
---- !u!114 &8783821841767946416
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4320654612393653625}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a5c9d521e5ef4759a8246a07d52221e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  DecisionPeriod: 5
-  TakeActionsBetweenDecisions: 1
 --- !u!1 &4644717447045899654
 GameObject:
   m_ObjectHideFlags: 0
