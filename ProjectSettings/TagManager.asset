@@ -10,6 +10,7 @@ TagManager:
   - Hunter
   - Ground
   - Checkpoint
+  - Cube
   layers:
   - Default
   - TransparentFX
@@ -19,7 +20,7 @@ TagManager:
   - UI
   - Wall
   - Target
-  - 
+  - Post Processing
   - 
   - 
   - 
