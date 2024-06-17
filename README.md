@@ -134,3 +134,11 @@ Tijdens het trainen van de ML-agents hebben we de volgende observaties gedaan:
 3. **Eindfase van de Training**:
    - Na 4M stappen lijken beide controllers een stabiel patroon te vertonen, met de Hunter Controller die een licht hogere cumulatieve beloning bereikt dan de Agent Controller.
    - De stabilisatie in beloningen suggereert dat de ML-agents een zekere mate van bekwaamheid hebben bereikt in hun respectieve taken.
+
+## Conclusie
+
+In dit project hebben we een AI-gestuurde VR-game ontwikkeld waarin de speler moet ontsnappen uit een doolhofachtige gevangenis.
+
+De resultaten van onze training laten zien dat de ML-agents effectief zijn getraind in hun respectieve taken: de Hunter Controller is beter geworden in het detecteren en achtervolgen van de speler, terwijl de Agent Controller succesvol objecten in de doolhof heeft gevonden. Het gebruik van curiosity-driven exploration heeft de prestaties van de Hunter Controller aanzienlijk verbeterd, wat wijst op een adaptieve leeromgeving.
+
+Deze resultaten tonen aan dat het integreren van AI in VR-games niet alleen de complexiteit en uitdaging van het spel kan verhogen, maar ook een dynamische en unieke speelervaring kan bieden. Door AI-gestuurde bewakers toe te voegen, wordt het spel onvoorspelbaarder en spannender, wat bijdraagt aan de herspeelbaarheid. Voor toekomstige verbeteringen kunnen we overwegen om meer geavanceerde gedragingen en interacties toe te voegen, zoals verschillende soorten bewakers of complexe ontsnappingsroutes voor de speler.
