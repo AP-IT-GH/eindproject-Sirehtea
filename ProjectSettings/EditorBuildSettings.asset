@@ -11,9 +11,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Map.unity
     guid: efd3a6ce7e50dfe44ab23c6749218b1b
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/ExitDoorMaze.unity
     guid: c370b6abfc92ea04f8fcb3c56413f9f5
+  - enabled: 1
+    path: Assets/Scenes/Easy.unity
+    guid: 97fe31265f56a3e4ca3d3ad951920a30
+  - enabled: 1
+    path: Assets/Scenes/Medium.unity
+    guid: 9f068dff87da2d340b5f81f638f17712
+  - enabled: 1
+    path: Assets/Scenes/Hard.unity
+    guid: 63cc14b932978354fb759d20f85dbbe0
   - enabled: 1
     path: Assets/Scenes/EndScene.unity
     guid: d8a7152d3b9a03a478869fbb37c225fa
