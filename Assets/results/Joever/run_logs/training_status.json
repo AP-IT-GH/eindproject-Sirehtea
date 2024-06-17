@@ -1,0 +1,51 @@
+{
+    "Hunter Controller": {
+        "checkpoints": [
+            {
+                "steps": 497748,
+                "file_path": "results\\Joever\\Hunter Controller\\Hunter Controller-497748.onnx",
+                "reward": -16.09999942779541,
+                "creation_time": 1718575018.264405,
+                "auxillary_file_paths": [
+                    "results\\Joever\\Hunter Controller\\Hunter Controller-497748.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 497748,
+            "file_path": "results\\Joever\\Hunter Controller.onnx",
+            "reward": -16.09999942779541,
+            "creation_time": 1718575018.264405,
+            "auxillary_file_paths": [
+                "results\\Joever\\Hunter Controller\\Hunter Controller-497748.pt"
+            ]
+        }
+    },
+    "Agent Controller": {
+        "checkpoints": [
+            {
+                "steps": 497748,
+                "file_path": "results\\Joever\\Agent Controller\\Agent Controller-497748.onnx",
+                "reward": 0.0,
+                "creation_time": 1718575018.3945174,
+                "auxillary_file_paths": [
+                    "results\\Joever\\Agent Controller\\Agent Controller-497748.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 497748,
+            "file_path": "results\\Joever\\Agent Controller.onnx",
+            "reward": 0.0,
+            "creation_time": 1718575018.3945174,
+            "auxillary_file_paths": [
+                "results\\Joever\\Agent Controller\\Agent Controller-497748.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}

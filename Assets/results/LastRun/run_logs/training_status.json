@@ -1,0 +1,69 @@
+{
+    "Hunter Controller": {
+        "checkpoints": [
+            {
+                "steps": 499901,
+                "file_path": "results\\LastRun\\Hunter Controller\\Hunter Controller-499901.onnx",
+                "reward": null,
+                "creation_time": 1718572565.7559588,
+                "auxillary_file_paths": [
+                    "results\\LastRun\\Hunter Controller\\Hunter Controller-499901.pt"
+                ]
+            },
+            {
+                "steps": 579578,
+                "file_path": "results\\LastRun\\Hunter Controller\\Hunter Controller-579578.onnx",
+                "reward": null,
+                "creation_time": 1718572770.8744042,
+                "auxillary_file_paths": [
+                    "results\\LastRun\\Hunter Controller\\Hunter Controller-579578.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 579578,
+            "file_path": "results\\LastRun\\Hunter Controller.onnx",
+            "reward": null,
+            "creation_time": 1718572770.8744042,
+            "auxillary_file_paths": [
+                "results\\LastRun\\Hunter Controller\\Hunter Controller-579578.pt"
+            ]
+        }
+    },
+    "Agent Controller": {
+        "checkpoints": [
+            {
+                "steps": 499901,
+                "file_path": "results\\LastRun\\Agent Controller\\Agent Controller-499901.onnx",
+                "reward": null,
+                "creation_time": 1718572565.8681216,
+                "auxillary_file_paths": [
+                    "results\\LastRun\\Agent Controller\\Agent Controller-499901.pt"
+                ]
+            },
+            {
+                "steps": 579450,
+                "file_path": "results\\LastRun\\Agent Controller\\Agent Controller-579450.onnx",
+                "reward": -5.0,
+                "creation_time": 1718572771.0085526,
+                "auxillary_file_paths": [
+                    "results\\LastRun\\Agent Controller\\Agent Controller-579450.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 579450,
+            "file_path": "results\\LastRun\\Agent Controller.onnx",
+            "reward": -5.0,
+            "creation_time": 1718572771.0085526,
+            "auxillary_file_paths": [
+                "results\\LastRun\\Agent Controller\\Agent Controller-579450.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.30.0",
+        "torch_version": "1.7.1+cu110"
+    }
+}
