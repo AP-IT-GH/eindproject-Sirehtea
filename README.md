@@ -27,6 +27,35 @@ In deze tutorial zullen we je door het proces leiden van het verkrijgen en repro
 
 Om het unity project te ontvangen moet je "git clone https://github.com/AP-IT-GH/eindproject-Sirehtea.git"
 
+## Trainen van de agent
+
+### Benodigdheden:
+
+- anaconda environment
+- laatste versie van unity
+- in je unity folderstructuur (.../assets/config) maak je een config file aan met extensie .yaml:
+
+### Te installeren (anaconda prompt)
+
+- pip3 install torch~=1.7.1 -f
+- python -m pip install mlagents==0.30.0
+
+### AI trainen
+
+```
+mlagents-learn config/[naam].yaml --run-id=[te-kiezen]
+```
+
+Nadat je deze commando uitvoert op je anaconda prompt zal je gevraagd worden om in unity de play knop in te drukken.
+
+## Bekijken van de resulataten via TensorBoard
+
+```
+tensorboard --logdir results --port 6006
+```
+
+Nadat je dit commando uitgevoerd hebt zal je een link krijgen die je redirzct naar je TensorBoard.
+
 ### Verloop van het Spel
 
 In ons spel neemt de speler de rol van een gevangene aan die moet ontsnappen uit een doolhofachtige gevangenis. De bewakers, die door machine learning zijn getraind, patrouilleren door de gevangenis en proberen de speler te vangen. De speler moet een keycard vinden die verspreid is in de gevangenis om de uitgang te ontgrendelen en te ontsnappen. De speler ervaart het spel in VR met behulp van de XR Rig Simulator.
