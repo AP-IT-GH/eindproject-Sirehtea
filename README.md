@@ -104,3 +104,44 @@ De oorspronkelijke one-pager bevatte de volgende elementen:
 - **Redenen**: Vereenvoudiging van de ontwikkeling, verbetering van de gameplay.
 
 Deze aanpassingen hebben geleid tot een meer gestroomlijnde en boeiende spelervaring, waarbij de kracht van AI en VR optimaal wordt benut om een dynamisch en meeslepend spel te creëren.
+
+## Resultaten
+
+### Resultaten van de Training
+
+Hier presenteren we de resultaten van de training van de ML-agents met behulp van TensorBoard. De grafiek hieronder toont de cumulatieve beloning van twee controllers: de Agent Controller (blauwe lijn) en de Hunter Controller (roze lijn).
+
+### Beschrijving van de TensorBoard Grafieken
+
+![image](https://github.com/AP-IT-GH/eindproject-Sirehtea/assets/145667096/b9dee6e5-fd2e-41f2-87da-68d5ea489f1c)
+
+
+- **Trainingsevolutie**: Deze grafiek toont de vooruitgang van de bewakers (Hunter Controller) bij het leren om de speler te detecteren en te achtervolgen, en de agent (Agent Controller) bij het vinden van drie objecten in het doolhof.
+- **Beloningsgrafiek**: Deze grafiek toont de gemiddelde beloning die de ML-agents ontvangen tijdens de training. De y-as vertegenwoordigt de cumulatieve beloning, terwijl de x-as de tijd (in stappen) weergeeft.
+
+### Opvallende Waarnemingen tijdens het Trainen
+
+Tijdens het trainen van de ML-agents hebben we de volgende observaties gedaan:
+
+1. **Beginfase van de Training**:
+
+   - De Hunter Controller (roze lijn) begon met een aanzienlijk lagere beloning, wat aangeeft dat de agent in het begin moeite had met het efficiënt detecteren en achtervolgen van de speler.
+   - De Agent Controller (blauwe lijn) had een relatief stabiele beloning in het begin, wat aangeeft dat de agent aanvankelijk effectief was in het vinden van objecten in het doolhof.
+
+2. **Middenfase van de Training**:
+
+   - Tussen 1M en 4M stappen is er een duidelijke verbetering in de prestaties van de Hunter Controller. De cumulatieve beloning stijgt, wat aangeeft dat de bewakers beter werden in het vinden en achtervolgen van de speler.
+   - De Hunter Controller maakte gebruik van curiosity-driven exploration om nieuwe plekken in het doolhof te verkennen, wat bijdroeg aan de verbetering van hun prestaties.
+   - De Agent Controller behoudt een relatief constante prestatie gedurende deze fase, met een lichte fluctuatie rond de gemiddelde beloning.
+
+3. **Eindfase van de Training**:
+   - Na 4M stappen lijken beide controllers een stabiel patroon te vertonen, met de Hunter Controller die een licht hogere cumulatieve beloning bereikt dan de Agent Controller.
+   - De stabilisatie in beloningen suggereert dat de ML-agents een zekere mate van bekwaamheid hebben bereikt in hun respectieve taken.
+
+## Conclusie
+
+In dit project hebben we een AI-gestuurde VR-game ontwikkeld waarin de speler moet ontsnappen uit een doolhofachtige gevangenis.
+
+De resultaten van onze training laten zien dat de ML-agents effectief zijn getraind in hun respectieve taken: de Hunter Controller is beter geworden in het detecteren en achtervolgen van de speler, terwijl de Agent Controller succesvol objecten in de doolhof heeft gevonden. Het gebruik van curiosity-driven exploration heeft de prestaties van de Hunter Controller aanzienlijk verbeterd, wat wijst op een adaptieve leeromgeving.
+
+Deze resultaten tonen aan dat het integreren van AI in VR-games niet alleen de complexiteit en uitdaging van het spel kan verhogen, maar ook een dynamische en unieke speelervaring kan bieden. Door AI-gestuurde bewakers toe te voegen, wordt het spel onvoorspelbaarder en spannender, wat bijdraagt aan de herspeelbaarheid. Voor toekomstige verbeteringen kunnen we overwegen om meer geavanceerde gedragingen en interacties toe te voegen, zoals verschillende soorten bewakers of complexe ontsnappingsroutes voor de speler.
