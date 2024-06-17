@@ -27,20 +27,20 @@ In deze tutorial zullen we je door het proces leiden van het verkrijgen en repro
 
 Om het unity project te ontvangen moet je "git clone https://github.com/AP-IT-GH/eindproject-Sirehtea.git"
 
-## Trainen van de agent
+### Trainen van de agent
 
-### Benodigdheden:
+#### Benodigdheden:
 
 - anaconda environment
 - laatste versie van unity
 - in je unity folderstructuur (.../assets/config) maak je een config file aan met extensie .yaml:
 
-### Te installeren (anaconda prompt)
+#### Te installeren (anaconda prompt)
 
 - pip3 install torch~=1.7.1 -f
 - python -m pip install mlagents==0.30.0
 
-### AI trainen
+#### AI trainen
 
 ```
 mlagents-learn config/[naam].yaml --run-id=[te-kiezen]
@@ -48,7 +48,7 @@ mlagents-learn config/[naam].yaml --run-id=[te-kiezen]
 
 Nadat je deze commando uitvoert op je anaconda prompt zal je gevraagd worden om in unity de play knop in te drukken.
 
-## Bekijken van de resulataten via TensorBoard
+#### Bekijken van de resulataten via TensorBoard
 
 ```
 tensorboard --logdir results --port 6006
