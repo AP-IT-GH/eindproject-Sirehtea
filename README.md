@@ -176,3 +176,12 @@ In dit project hebben we een AI-gestuurde VR-game ontwikkeld waarin de speler mo
 De resultaten van onze training laten zien dat de ML-agents effectief zijn getraind in hun respectieve taken: de Hunter Controller is beter geworden in het detecteren en achtervolgen van de speler, terwijl de Agent Controller succesvol objecten in de doolhof heeft gevonden. Het gebruik van curiosity-driven exploration heeft de prestaties van de Hunter Controller aanzienlijk verbeterd, wat wijst op een adaptieve leeromgeving.
 
 Deze resultaten tonen aan dat het integreren van AI in VR-games niet alleen de complexiteit en uitdaging van het spel kan verhogen, maar ook een dynamische en unieke speelervaring kan bieden. Door AI-gestuurde bewakers toe te voegen, wordt het spel onvoorspelbaarder en spannender, wat bijdraagt aan de herspeelbaarheid. Voor toekomstige verbeteringen kunnen we overwegen om meer geavanceerde gedragingen en interacties toe te voegen, zoals verschillende soorten bewakers of complexe ontsnappingsroutes voor de speler.
+
+## Bronvermelding
+
+- [Tutorial AI-powered VR: PRISON BREAK - Deel 1](https://youtu.be/KHgSDFB9nTE?si=xjAkrKDIVXOaUfIg)
+- [Tutorial AI-powered VR: PRISON BREAK - Deel 2](https://youtu.be/Xwec9-Do22Y?si=yDPKnKF_ncFgnBZH)
+- [Tutorial AI-powered VR: PRISON BREAK - Deel 3](https://youtu.be/QKk_scTdabQ?si=K2OB9iRLkP8y5oG0)
+- [Tutorial AI-powered VR: PRISON BREAK - Deel 4](https://youtu.be/Z87xPYl7g4o?si=NaIQmBdNQqZG32-s)
+
+
