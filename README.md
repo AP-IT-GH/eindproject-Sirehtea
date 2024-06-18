@@ -179,9 +179,9 @@ Deze resultaten tonen aan dat het integreren van AI in VR-games niet alleen de c
 
 ## Bronvermelding
 
-- [Tutorial AI-powered VR: PRISON BREAK - Deel 1](https://youtu.be/KHgSDFB9nTE?si=xjAkrKDIVXOaUfIg)
-- [Tutorial AI-powered VR: PRISON BREAK - Deel 2](https://youtu.be/Xwec9-Do22Y?si=yDPKnKF_ncFgnBZH)
-- [Tutorial AI-powered VR: PRISON BREAK - Deel 3](https://youtu.be/QKk_scTdabQ?si=K2OB9iRLkP8y5oG0)
-- [Tutorial AI-powered VR: PRISON BREAK - Deel 4](https://youtu.be/Z87xPYl7g4o?si=NaIQmBdNQqZG32-s)
+- [Tutorial - 4](https://youtu.be/KHgSDFB9nTE?si=xjAkrKDIVXOaUfIg)
+- [Tutorial - 3](https://youtu.be/Xwec9-Do22Y?si=yDPKnKF_ncFgnBZH)
+- [Tutorial - 2](https://youtu.be/QKk_scTdabQ?si=K2OB9iRLkP8y5oG0)
+- [Tutorial - 1](https://youtu.be/Z87xPYl7g4o?si=NaIQmBdNQqZG32-s)
 
 
